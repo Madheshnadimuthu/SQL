@@ -1,0 +1,65 @@
+SELECT * FROM INSURANCE_J ORDER BY CUSTOMER_ID
+select * from Busbooking_Madhesh order by s_no
+select * from Bankaccount_I order by FORM_NO 
+
+Foregin key use...............................
+
+select * from Loan_K ORDER BY S_NO
+
+
+
+
+
+create table Busbooking_Madhesh(S_NO Number(2) Primary Key,
+BUS_NO varchar(20) UNIQUE,
+PASSENGER_NAME varchar(20) Not Null,
+AGE number(2) Not Null,
+SEX varchar(10) Not Null,
+PHONE_NUMBER Number check(length(PHONE_NUMBER)=10),
+EMAIL varchar(30) Unique,
+FROM_LOCATION varchar(20) Not Null,
+TO_LOCATION varchar(20) Not Null,
+JOURNEY_DATE DATE NOT NULL);
+
+
+insert into Busbooking_Madhesh values(1,'TN01_BS0425','MADHESH N',22,'Male',9942192635,'Mathesh@gmail.com','Chennai','Nagapattinam',TO_DATE('2023-08-10', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(2,'TN01_BA0435','AGILA M',21,'Female',9790316405,'Agila@gmail.com','Chennai','Vellankanni',TO_DATE('2023-08-10', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(3,'TN02_BV7425','KARAN G',25,'Male',9159685389,'Karan@gmail.com','Chennai','Karaikal',TO_DATE('2023-08-10', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(4,'TN07_AX0427','CHANDRU D',26,'Male',9159685665,'Chandru@gmail.com','Chennai','Sirkazhi',TO_DATE('2023-08-10', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(5,'TN09_XS7825','DHURAI D',21,'Male',9159685256,'Dhurai@gmail.com','Chennai','Tiruthuraipoondi',TO_DATE('2023-08-10', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(6,'TN07_BV1425','HEMACHANDRAN',22,'Male',7630264585,'Hema@gmail.com','Chennai','Villupuram',TO_DATE('2023-08-12', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(7,'TN42_BS0445','DIVISH',22,'Male',7625659586,'Dhivi@gmail.com','Chennai','Pondicherry',TO_DATE('2023-08-12', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(8,'TN77_NG7725','AARTHI',19,'Female',7625356595,'Arthi@gmail.com','Chennai','Cuddalore',TO_DATE('2023-08-12', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(9,'TN50_AU7927','MONISHA',22,'Female',9985458545,'Moni@gmail.com','Chennai','Chidhambaram',TO_DATE('2023-08-12', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(10,'TN76_AX4589','VARSHA',23,'Female',9985362565,'Varsh@gmail.com','Chennai','Thindivanam',TO_DATE('2023-08-12', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(11,'TN55_ZX4225','VINOTH',28,'Male',9985362585,'Vinoth@gmail.com','Chennai','Tirichy',TO_DATE('2023-08-14', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(12,'TN12_XX0025','VINOTHA',23,'Female',9985452585,'Vinotha@gmail.com','Chennai','Tanjavoore',TO_DATE('2023-08-14', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(13,'TN14_BS0785','PRAKASH',23,'Male',6385452585,'Prakash@gmail.com','Chennai','Tiruvarur',TO_DATE('2023-08-14', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(14,'TN56_VB0477','VISHNU',25,'Male',9185452585,'Vishnu@gmail.com','Chennai','Needamangalam',TO_DATE('2023-08-14', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(15,'TN60_AX0115','VIKRAMAN',29,'Male',9985452585,'Vikraman@gmail.com','Chennai','Kumbakonam',TO_DATE('2023-08-14', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(16,'TN78_NM6958','NADIMUTHU',44,'Male',9985552585,'Nadimuthu@gmail.com','Nagapattinam','Chennai',TO_DATE('2023-08-16', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(17,'TN05_BS1125','RENUGA',35,'Female',7685552585,'Renu@gmail.com','Thiruthuraipoondi','Chennai',TO_DATE('2023-08-16', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(18,'TN19_NM0475','PAKKIRISAMY',45,'Male',9685552585,'Pkkirisamy@gmail.com','Vellankanni','Chennai',TO_DATE('2023-08-16', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(19,'TN06_NX0427','SELVI',45,'Female',9785552585,'Selvi@gmail.com','Vellankanni','Chennai',TO_DATE('2023-08-16', 'YYYY-MM-DD'));
+insert into Busbooking_Madhesh values(20,330,'KOWSALYA',20,'Female',9885552585,'Kowsalya@gmail.com','Karikal','Chennai',TO_DATE('2023-08-16', 'YYYY-MM-DD'));
+
+select * from Busbooking_Madhesh order by s_no
+
+drop table Busbooking_Madhesh
+
+update Busbooking_Madhesh set BUS_NO='TN98_BA0202' where S_no=20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

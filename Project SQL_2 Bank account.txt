@@ -1,0 +1,35 @@
+Create table Bankaccount_I(FORM_NO Number(2) Primary Key,
+NAME Varchar(20) Not Null,
+FATHER_NAME Varchar(20) Not Null,
+SEX Varchar(3) Not Null,
+AGE Number(2) Not Null,
+ADHAR_NUMBER Number(12) Unique,
+PHONE_NUMBER Number check(length(PHONE_NUMBER)=10),
+EMAIL Varchar(20) Unique,
+ADDRESS Varchar(20) Not Null,
+BRANCH Varchar(10) Not Null)
+
+
+insert into Bankaccount_I values(1,'MADHESH N','NADIMUTHU','M',22,391093080908,9942192635,'Madhesh@gmail.com','Main_Road_APM','Kallimedu');
+insert into Bankaccount_I values(2,'VINOTH P','PACKKIRISAMY','M',21,391353080901,9142192635,'Vinoth@gmail.com','South_Street_NGP','Kallimedu');
+insert into Bankaccount_I values(3,'VALLI M','MURUGANANTHAM','M',18,365215256595,9144592635,'Valli@gmail.com','West_Street_NGP','Kallimedu');
+insert into Bankaccount_I values(4,'VIJAY P','PACKKIRISAMY','M',20,375215256595,8644592635,'Vijay@gmail.com','North_Street_TTP','Kallimedu');
+insert into Bankaccount_I values(5,'AGILA P','PACKKIRISAMY','F',22,335215256595,9944592635,'Agi@gmail.com','North_Street_TTP','Kallimedu');
+insert into Bankaccount_I values(6,'AGILAN R','RAJ','M',22,335315256595,8044592635,'Agilan@gmail.com','Madha_kovil_VLK','Karaikal');
+insert into Bankaccount_I values(7,'RAJKUMAR N','NAREN','M',29,345315256595,8144592635,'Raj@gmail.com','Madha_kovil_VLK','Karaikal');
+insert into Bankaccount_I values(8,'AKASH N','NARESH','M',31,355315256595,8244592635,'Akash@gmail.com','West_Street_MPT','Karaikal');
+insert into Bankaccount_I values(9,'MONISHA S','SELVARAJ','F',24,366315256595,8444592635,'Moni@gmail.com','South_Street_MPT','Karaikal');
+insert into Bankaccount_I values(10,'AARTHI P','PONRAJ','F',22,376315256595,8544592635,'Arthi@gmail.com','West_Street_MPT','Karaikal');
+insert into Bankaccount_I values(11,'HEMACHANDRAN R','RAJESH','M',21,316315256595,7544592635,'Chandru@gmail.com','North_Street_SKI','Seerkazhi');
+insert into Bankaccount_I values(12,'DHIVISH A','AKASH','M',21,336315256595,7844592635,'Dhivi@gmail.com','Kcg_Street_CUD','Seerkazhi');
+insert into Bankaccount_I values(13,'RENGARAJ M','MARIMUTHU','M',27,636315256595,9844592635,'Rengaraj@gmail.com','Kcg_Street_CUD','Seerkazhi');
+insert into Bankaccount_I values(14,'RAJESH M','MARIMUTHU','M',29,686315256595,8844592635,'Rajesh@gmail.com','Egs_Street_NGP','Seerkazhi');
+insert into Bankaccount_I values(15,'MEGALA R','RAJESH','F',24,786315256595,7844592635,'Megala@gmail.com','Egs_Street_NGP','Seerkazhi');
+insert into Bankaccount_I values(16,'DHANAM M','MAGESH','F',35,456315256595,7944592635,'Dhanam@gmail.com','Nss_Street_TTP','Cuddalore');
+insert into Bankaccount_I values(17,'RENUGA N','NADIMUTHU','F',35,476315256595,7644592635,'Renu@gmail.com','Nvp_Street_KKL','Cuddalore');
+insert into Bankaccount_I values(18,'SELVI P','PACKKIRISAMY','F',37,856315256595,9944592635,'Selvi@gmail.com','PK_Street_VLK','Cuddalore');
+insert into Bankaccount_I values(19,'TAJUDEEN A','ANWAR','M',38,956315256595,6944592635,'Taj@gmail.com','PKK_Street_VLK','NAGGORE');
+insert into Bankaccount_I values(20,'SAKTHI A','ALAGESH','M',25,756315256595,7944592635,'Sakthi@gmail.com','RR_Street_NGP','NAGGORE');
+
+select * from Bankaccount_I order by FORM_NO 
+
